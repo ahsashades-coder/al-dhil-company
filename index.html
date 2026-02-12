@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>مؤسسة الظل · الموقع الكامل</title>
+    <meta name="description" content="مؤسسة الظل - نخيل، زيتون، شبوك، مظلات. خدمات زراعية متكاملة، تركيب شبوك، توريد مظلات، غرس نخيل، شتلات زيتون">
+    <meta name="keywords" content="نخيل, زيتون, شبوك, مظلات, زراعة, تركيب شبوك, مظلات سيارات, برجولات, فسائل نخيل, شتلات زيتون">
+    <meta name="author" content="سليمان الحكمي">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/dtVW0GKF/1770894478908-edit-293255954903182.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a2e38, #1c5c6c);
+            min-height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .header-25 {
+            width: 100%;
+            height: 25vh;
+            max-height: 180px;
+            min-height: 150px;
+            background: linear-gradient(145deg, #064055, #0f586e);
+            color: white;
+            padding: 8px 3%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 4px solid #ffe28c;
+            box-shadow: 0 5px 0 #043340;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        .logo {
+            flex-shrink: 0;
+        }
+        .logo-frame {
+            background: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            box-shadow: 0 5px 0 #043340, 0 0 0 2px #ffe28c inset;
+            display: inline-block;
+        }
+        .logo-frame img {
+            height: 35px;
+            width: auto;
+            display: block;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            padding-right: 5px;
+        }
+
+        .title {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            margin-bottom: 2px;
+        }
+        .title h1 {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0 2px 0 #043340;
+        }
+        .title span {
+            color: #ffe28c;
+            font-size: 0.9rem;
+            font-weight: 800;
+            text-shadow: 0 1px 0 #7a5e1a;
+        }
+
+        .magic {
+            background: rgba(255,226,140,0.12);
+            border: 1px solid #ffe28c;
+            padding: 1px 10px;
+            border-radius: 30px;
+            font-size: 0.65rem;
+            color: #ffe28c;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 3px;
+        }
+
+        .services-badges {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-bottom: 3px;
+        }
+        .service-badge {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid #ffe28c;
+            padding: 1px 10px;
+            border-radius: 40px;
+            font-size: 0.65rem;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .service-badge i {
+            color: #ffe28c;
+            font-size: 0.6rem;
+        }
+
+        .motivation {
+            background: rgba(0,0,0,0.15);
+            border: 1px solid #ffe28c;
+            padding: 2px 12px;
+            border-radius: 50px;
+            font-size: 0.65rem;
+            color: #ffe28c;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            box-shadow: 0 3px 0 #032b3a;
+        }
+
+        .incentive {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255,226,140,0.18);
+            padding: 4px 6px;
+            border-radius: 30px;
+            border: 1.5px solid #ffe28c;
+            color: #ffe28c;
+            font-size: 0.65rem;
+            font-weight: 700;
+            box-shadow: 0 4px 0 #043340;
+        }
+        .incentive i {
+            font-size: 1rem;
+            margin-bottom: 1px;
+        }
+
+        .ticker-section {
+            width: 100%;
+            margin-top: 3px;
+        }
+        .ticker-all {
+            display: flex;
+            width: 100%;
+            background: #004c7a;
+            border-top: 3px solid #7ec8ff;
+            border-bottom: 3px solid #7ec8ff;
+            direction: ltr;
+        }
+        .marq {
+            flex: 1;
+            overflow: hidden;
+            background: #004c7a;
+            white-space: nowrap;
+        }
+        .marq span {
+            display: inline-block;
+            animation: moveRight 130s linear infinite;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            padding: 8px 0;
+            white-space: nowrap;
+        }
+        .marq span i {
+            color: #ffd966;
+            margin: 0 10px;
+            font-size: 18px;
+            font-style: normal;
+        }
+        @keyframes moveRight {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        .slider-3d-section {
+            width: 100%;
+            padding: 15px 0;
+            background: rgba(0,0,0,0.2);
+            backdrop-filter: blur(5px);
+            margin-top: 5px;
+            border-top: 2px solid #ffe28c;
+            border-bottom: 2px solid #ffe28c;
+        }
+
+        .slider-container {
+            width: 100%;
+            position: relative;
+            perspective: 1000px;
+            overflow: hidden;
+            padding: 5px 0;
+        }
+
+        .slider-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        .tab-btn {
+            background: rgba(255,226,140,0.1);
+            border: 1.5px solid #ffe28c;
+            color: white;
+            padding: 8px 18px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 0 #043340;
+        }
+
+        .tab-btn i {
+            color: #ffe28c;
+            font-size: 1rem;
+        }
+
+        .tab-btn.active {
+            background: #ffe28c;
+            color: #043340;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 0 #043340;
+        }
+
+        .tab-btn.active i {
+            color: #043340;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            animation: autoRotate 40s linear infinite;
+            transition: transform 0.5s;
+        }
+
+        .slider-item {
+            position: absolute;
+            width: 160px;
+            height: 200px;
+            left: 50%;
+            top: 50%;
+            transform-origin: center;
+            transform: translate(-50%, -50%) rotateY(calc(var(--i) * 30deg)) translateZ(250px);
+            transition: all 0.4s;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5), 0 0 0 2px rgba(255,226,140,0.3);
+            border: 2px solid #ffe28c;
+            background: white;
+        }
+
+        .slider-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .slider-item:hover {
+            transform: translate(-50%, -50%) rotateY(calc(var(--i) * 30deg)) translateZ(280px);
+            border-color: #ffe28c;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.8), 0 0 0 3px #ffe28c;
+        }
+
+        @keyframes autoRotate {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .control-btn {
+            background: rgba(255,226,140,0.2);
+            border: 2px solid #ffe28c;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 5px 0 #043340;
+        }
+
+        .control-btn:hover {
+            background: #ffe28c;
+            color: #043340;
+            transform: scale(1.1);
+        }
+
+        .services-3d-section {
+            width: 100%;
+            padding: 40px 15px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+            backdrop-filter: blur(10px);
+            border-top: 3px solid #ffe28c;
+        }
+
+        .services-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .services-title h2 {
+            color: white;
+            font-size: 2rem;
+            font-weight: 900;
+            text-shadow: 0 6px 0 #043340;
+            display: inline-block;
+            border-bottom: 5px solid #ffe28c;
+            padding-bottom: 15px;
+        }
+
+        .services-grid-3d {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card-3d {
+            width: 320px;
+            height: 450px;
+            perspective: 2000px;
+            transform-style: preserve-3d;
+            transition: all 0.5s;
+            margin-bottom: 20px;
+        }
+
+        .card-3d:hover {
+            transform: translateY(-20px) scale(1.02);
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+            border-radius: 30px;
+        }
+
+        .card-3d:hover .card-inner {
+            transform: rotateY(8deg) rotateX(5deg);
+        }
+
+        .card-front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 30px;
+            overflow: hidden;
+            background: linear-gradient(145deg, #064055, #0f586e);
+            border: 3px solid #ffe28c;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 20px 0 #043340;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            border-bottom: 4px solid #ffe28c;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+            display: block;
+        }
+
+        .card-3d:hover .card-image img {
+            transform: scale(1.15);
+        }
+
+        .card-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0,67,80,0.7));
+        }
+
+        .card-icon-3d {
+            position: absolute;
+            bottom: -25px;
+            right: 20px;
+            width: 70px;
+            height: 70px;
+            background: #ffe28c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid white;
+            box-shadow: 0 8px 0 #7a5e1a;
+            z-index: 10;
+            transform: translateZ(20px) rotateY(-5deg) rotateX(5deg);
+            transition: all 0.3s;
+        }
+
+        .card-3d:hover .card-icon-3d {
+            transform: translateZ(40px) rotateY(-5deg) rotateX(5deg) scale(1.1);
+        }
+
+        .card-icon-3d i {
+            font-size: 35px;
+            color: #043340;
+        }
+
+        .card-content {
+            padding: 40px 20px 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content h3 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 0 #043340;
+        }
+
+        .card-desc {
+            color: #f0f9ff;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .btn-3d {
+            display: inline-block;
+            background: #ffe28c;
+            color: #043340;
+            font-weight: 900;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 8px 0 #7a5e1a;
+            transition: all 0.2s;
+            border: 2px solid white;
+            text-align: center;
+        }
+
+        .btn-3d i {
+            margin-left: 8px;
+        }
+
+        .btn-3d:hover {
+            transform: translateZ(30px) scale(1.05);
+            background: white;
+        }
+
+        .mzalat-section {
+            width: 100%;
+            padding: 40px 15px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+            backdrop-filter: blur(10px);
+            border-top: 3px solid #ffe28c;
+            border-bottom: 3px solid #ffe28c;
+        }
+
+        .mzalat-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mzalat-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .mzalat-title h2 {
+            color: white;
+            font-size: 2rem;
+            font-weight: 900;
+            text-shadow: 0 6px 0 #043340;
+            display: inline-block;
+            border-bottom: 5px solid #ffe28c;
+            padding-bottom: 15px;
+        }
+
+        .mzalat-card {
+            width: 380px;
+            height: 520px;
+            perspective: 2000px;
+            transform-style: preserve-3d;
+            transition: all 0.5s;
+            margin: 0 auto;
+        }
+
+        .mzalat-card:hover {
+            transform: translateY(-20px) scale(1.02);
+        }
+
+        .mzalat-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+            border-radius: 30px;
+        }
+
+        .mzalat-card:hover .mzalat-inner {
+            transform: rotateY(8deg) rotateX(5deg);
+        }
+
+        .mzalat-front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 30px;
+            overflow: hidden;
+            background: linear-gradient(145deg, #064055, #0f586e);
+            border: 3px solid #ffe28c;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 20px 0 #043340;
+        }
+
+        .mzalat-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+            border-bottom: 4px solid #ffe28c;
+        }
+
+        .mzalat-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+            display: block;
+        }
+
+        .mzalat-card:hover .mzalat-image img {
+            transform: scale(1.15);
+        }
+
+        .mzalat-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 50%, rgba(0,67,80,0.7));
+        }
+
+        .mzalat-icon {
+            position: absolute;
+            bottom: -25px;
+            right: 20px;
+            width: 70px;
+            height: 70px;
+            background: #ffe28c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid white;
+            box-shadow: 0 8px 0 #7a5e1a;
+            z-index: 10;
+            transform: translateZ(20px) rotateY(-5deg) rotateX(5deg);
+            transition: all 0.3s;
+        }
+
+        .mzalat-card:hover .mzalat-icon {
+            transform: translateZ(40px) rotateY(-5deg) rotateX(5deg) scale(1.1);
+        }
+
+        .mzalat-icon i {
+            font-size: 35px;
+            color: #043340;
+        }
+
+        .mzalat-content {
+            padding: 45px 25px 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mzalat-content h3 {
+            color: white;
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 0 #043340;
+        }
+
+        .phone-number {
+            background: rgba(255,226,140,0.15);
+            border: 2px solid #ffe28c;
+            border-radius: 60px;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #ffe28c;
+            font-size: 1.1rem;
+            font-weight: 700;
+            backdrop-filter: blur(5px);
+        }
+
+        .phone-number i {
+            font-size: 1.2rem;
+        }
+
+        .mzalat-desc {
+            color: #f0f9ff;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .mzalat-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 20px;
+            border: 2px solid #ffe28c;
+        }
+
+        .mzalat-gallery img {
+            width: 100%;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #ffe28c;
+            transition: transform 0.3s;
+        }
+
+        .mzalat-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* ===== أقسام النصوص الكثيفة تحت الأقسام ===== */
+        .content-sections {
+            width: 100%;
+            padding: 50px 15px;
+            background: linear-gradient(135deg, #0a2e38, #1c5c6c);
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .content-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 2px solid #ffe28c;
+            border-radius: 30px;
+            padding: 35px;
+            box-shadow: 0 15px 0 #043340, 0 20px 30px rgba(0,0,0,0.4);
+        }
+
+        .content-card h3 {
+            color: #ffe28c;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 3px solid #ffe28c;
+            padding-bottom: 15px;
+        }
+
+        .content-card h3 i {
+            font-size: 1.8rem;
+        }
+
+        .content-text {
+            color: white;
+            font-size: 1rem;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .keyword-item {
+            background: rgba(255,226,140,0.1);
+            border: 1px solid #ffe28c;
+            border-radius: 40px;
+            padding: 10px 18px;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+
+        .keyword-item:hover {
+            background: #ffe28c;
+            color: #043340;
+            transform: translateX(-5px);
+        }
+
+        .keyword-item i {
+            color: #ffe28c;
+            font-size: 0.8rem;
+        }
+
+        .keyword-item:hover i {
+            color: #043340;
+        }
+
+        .designer-signature {
+            width: 100%;
+            padding: 30px 15px;
+            background: linear-gradient(145deg, #064055, #0f586e);
+            border-top: 5px solid #ffe28c;
+            border-bottom: 5px solid #ffe28c;
+            text-align: center;
+        }
+
+        .signature-content {
+            max-width: 800px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .signature-content h4 {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ffe28c;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 0 #043340;
+        }
+
+        .signature-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .signature-wa {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(255,226,140,0.15);
+            border: 2px solid #ffe28c;
+            border-radius: 60px;
+            padding: 15px 30px;
+            color: #ffe28c;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .signature-wa:hover {
+            background: #ffe28c;
+            color: #043340;
+            transform: scale(1.05);
+        }
+
+        .signature-wa i {
+            font-size: 1.8rem;
+        }
+
+        .signature-wa:hover i {
+            color: #043340;
+        }
+
+        .float-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+            z-index: 9999;
+        }
+        .float-left, .float-right {
+            pointer-events: auto;
+        }
+        .float-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: all 0.2s;
+            text-decoration: none;
+            border: 2.5px solid;
+        }
+        .float-btn i {
+            font-size: 26px;
+            margin-bottom: 2px;
+        }
+        .float-btn span {
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .whatsapp-btn {
+            background: #25d366;
+            border-color: #075e54;
+            color: white;
+        }
+        .call-btn {
+            background: #004c7a;
+            border-color: #ffe28c;
+            color: white;
+        }
+        .call-btn i {
+            color: #ffe28c;
+        }
+
+        @media (max-width: 500px) {
+            .card-3d { width: 300px; height: 430px; }
+            .mzalat-card { width: 300px; height: 500px; }
+            .mzalat-gallery { grid-template-columns: repeat(4, 1fr); }
+            .mzalat-gallery img { height: 60px; }
+            .content-card { padding: 25px; }
+            .content-card h3 { font-size: 1.5rem; }
+            .keywords-grid { grid-template-columns: repeat(2, 1fr); }
+            .signature-content h4 { font-size: 1.4rem; }
+            .signature-wa { font-size: 1rem; padding: 12px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-25">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-frame">
+                    <img src="https://i.postimg.cc/dtVW0GKF/1770894478908-edit-293255954903182.png" alt="شعار مؤسسة الظل">
+                </div>
+            </div>
+            <div class="content">
+                <div class="title">
+                    <h1>مؤسسة الظل</h1>
+                    <span>2026</span>
+                </div>
+                <div class="magic">
+                    <i class="fas fa-magic"></i> في خدمتكم
+                </div>
+                <div class="services-badges">
+                    <span class="service-badge"><i class="fas fa-tree"></i> نخيل</span>
+                    <span class="service-badge"><i class="fas fa-olive"></i> زيتون</span>
+                    <span class="service-badge"><i class="fas fa-fence"></i> شبوك</span>
+                    <span class="service-badge"><i class="fas fa-umbrella"></i> مظلات</span>
+                </div>
+                <div class="motivation">
+                    <i class="fas fa-star"></i> نخيلنا فخر، زيتوننا أصالة، شبوكنا أمان، مظلاتنا روعة
+                </div>
+            </div>
+            <div class="incentive">
+                <i class="fas fa-trophy"></i>
+                <span>جودة 2026</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="ticker-section">
+        <div class="ticker-all">
+            <div class="marq">
+                <span>
+                    🌴 نخيل مثمر <i>◆</i> فسائل نخيل <i>◆</i> نخيل ملكي <i>◆</i> نخيل مدجول <i>◆</i>
+                    نخيل برحي <i>◆</i> نخيل خلاص <i>◆</i> نخيل سكري <i>◆</i> 🌿 زيتون إسباني <i>◆</i>
+                    زيتون روماني <i>◆</i> شتلات زيتون <i>◆</i> 🛡️ شبوك زراعية <i>◆</i> شبوك مزارع <i>◆</i>
+                    تركيب شبوك <i>◆</i> ☂️ مظلات سيارات <i>◆</i> مظلات مدارس <i>◆</i> برجولات <i>◆</i>
+                    📍 ترويسة زراعية <i>◆</i> استشارات زراعية <i>◆</i> 🌴🌿🛡️☂️
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== سلايدر ثلاثي الأبعاد ===== -->
+    <div class="slider-3d-section">
+        <div class="slider-container">
+            <div class="slider-tabs">
+                <button class="tab-btn active" data-category="olive"><i class="fas fa-olive"></i> زيتون (22)</button>
+                <button class="tab-btn" data-category="palm"><i class="fas fa-tree"></i> نخيل (48)</button>
+                <button class="tab-btn" data-category="fence"><i class="fas fa-fence"></i> شبوك (15)</button>
+            </div>
+            <div class="slider-wrapper" id="sliderWrapper">
+                <!-- زيتون 22 صورة -->
+                <div class="slider-item" style="--i:0" data-category="olive"><img src="https://i.ibb.co/CsYkWnPF/Whats-App-Image-2025-08-13-at-4-32-04-PM-1-1olive.webp" alt="زيتون"></div>
+                <div class="slider-item" style="--i:1" data-category="olive"><img src="https://i.ibb.co/N2MxqZ7T/Whats-App-Image-2025-08-13-at-4-32-04-PM-2-1olive.webp" alt="زيتون"></div>
+                <div class="slider-item" style="--i:2" data-category="olive"><img src="https://i.ibb.co/b57W0xmw/Whats-App-Image-2025-08-13-at-4-32-04-PM-3olive.webp" alt="زيتون"></div>
+                <div class="slider-item" style="--i:3" data-category="olive"><img src="https://i.ibb.co/jkncN7NP/image1.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:4" data-category="olive"><img src="https://i.ibb.co/HfSSPqjf/image2.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:5" data-category="olive"><img src="https://i.ibb.co/hRZLHW1t/image3.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:6" data-category="olive"><img src="https://i.ibb.co/FqqQ5TSw/image4.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:7" data-category="olive"><img src="https://i.ibb.co/FkkqQwdx/image7.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:8" data-category="olive"><img src="https://i.ibb.co/Z1GMYJy6/67d0d5bdcc3baolive.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:9" data-category="olive"><img src="https://i.ibb.co/rGF1fF4B/image6.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:10" data-category="olive"><img src="https://i.ibb.co/Qv1bstWj/image5.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:11" data-category="olive"><img src="https://i.ibb.co/hFw0RPXS/image8.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:12" data-category="olive"><img src="https://i.ibb.co/5gqk9Mhw/image9.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:13" data-category="olive"><img src="https://i.ibb.co/1tbRw7gg/image10.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:14" data-category="olive"><img src="https://i.ibb.co/JwjVQ5CX/image11.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:15" data-category="olive"><img src="https://i.ibb.co/qL465zc9/IMG-20260212-WA0006olive.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:16" data-category="olive"><img src="https://i.ibb.co/gFjf69kw/image13.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:17" data-category="olive"><img src="https://i.ibb.co/5hczLs6q/image12.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:18" data-category="olive"><img src="https://i.ibb.co/TDmFgg4Z/image16.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:19" data-category="olive"><img src="https://i.ibb.co/Q3HTVP7s/image15.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:20" data-category="olive"><img src="https://i.ibb.co/jvRtbdzx/IMG-20260212-WA0007olive.jpg" alt="زيتون"></div>
+                <div class="slider-item" style="--i:21" data-category="olive"><img src="https://i.ibb.co/dJ1Ffkr1/image14.jpg" alt="زيتون"></div>
+                
+                <!-- نخيل 48 صورة -->
+                <div class="slider-item" style="--i:22" data-category="palm"><img src="https://i.ibb.co/7JfKRnxW/IMG-20260212-WA0004olive.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:23" data-category="palm"><img src="https://i.ibb.co/8gq6HB9y/image-N3.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:24" data-category="palm"><img src="https://i.ibb.co/v4Lh8Xm4/image-N4.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:25" data-category="palm"><img src="https://i.ibb.co/C3nN00tr/Whats-App-Image-2025-08-13-at-4-31-57-PM-2-3.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:26" data-category="palm"><img src="https://i.ibb.co/8gzJGm35/Whats-App-Image-2025-08-13-at-4-31-58-PM-2.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:27" data-category="palm"><img src="https://i.ibb.co/twhTF9Wv/Whats-App-Image-2025-08-13-at-4-31-58-PM-1.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:28" data-category="palm"><img src="https://i.ibb.co/ymDcXTYG/Whats-App-Image-2025-08-13-at-4-31-57-PM-4.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:29" data-category="palm"><img src="https://i.ibb.co/N2Prfj38/Whats-App-Image-2025-08-13-at-4-31-57-PM-3-2.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:30" data-category="palm"><img src="https://i.ibb.co/3my6vTRJ/Whats-App-Image-2025-08-13-at-4-31-58-PM-3-1.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:31" data-category="palm"><img src="https://i.ibb.co/DDNFCK2q/Whats-App-Image-2025-08-13-at-4-31-59-PM-1-1.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:32" data-category="palm"><img src="https://i.ibb.co/HfzNXF2L/Whats-App-Image-2025-08-13-at-4-31-58-PM.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:33" data-category="palm"><img src="https://i.ibb.co/B23fyn1c/Whats-App-Image-2025-08-13-at-4-31-59-PM-2.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:34" data-category="palm"><img src="https://i.ibb.co/nqs4RLT0/Whats-App-Image-2025-08-13-at-4-32-00-PM-2-1.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:35" data-category="palm"><img src="https://i.ibb.co/RG67v3cp/Whats-App-Image-2025-08-13-at-4-32-00-PM-1.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:36" data-category="palm"><img src="https://i.ibb.co/DD247X87/Whats-App-Image-2025-08-13-at-4-31-59-PM-4.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:37" data-category="palm"><img src="https://i.ibb.co/3mY2DTSj/Whats-App-Image-2025-08-13-at-4-31-59-PM-3-1.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:38" data-category="palm"><img src="https://i.ibb.co/7t49sDqC/Whats-App-Image-2025-08-13-at-4-32-02-PM-3.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:39" data-category="palm"><img src="https://i.ibb.co/fYnBQ2LV/Whats-App-Image-2025-08-13-at-4-32-10-PM-3-1.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:40" data-category="palm"><img src="https://i.ibb.co/hJcBWhV9/4630a6bc0fedcb08241db32604cbf7b0.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:41" data-category="palm"><img src="https://i.ibb.co/1Yb0BYkq/Whats-App-Image-2025-08-13-at-4-32-06-PM-1-1.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:42" data-category="palm"><img src="https://i.ibb.co/tT27m0NY/washingtonia-seeds.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:43" data-category="palm"><img src="https://i.ibb.co/ZpdZn8WH/Whats-App-Image-2025-08-13-at-4-32-02-PM-2-1.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:44" data-category="palm"><img src="https://i.ibb.co/rfHQGxGH/Whats-App-Image-2025-08-13-at-4-32-11-PM-3.webp" alt="نخيل"></div>
+                <div class="slider-item" style="--i:45" data-category="palm"><img src="https://i.ibb.co/CpRV7GFd/IMG-20240715-WA0046.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:46" data-category="palm"><img src="https://i.ibb.co/mLDDh3K/7331bb871ab947b9a34313dba0af5d2d.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:47" data-category="palm"><img src="https://i.ibb.co/hFtmr3h7/IMG-20240209-WA0046.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:48" data-category="palm"><img src="https://i.ibb.co/fbmqDth/IMG-20240212-WA0008.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:49" data-category="palm"><img src="https://i.ibb.co/35Zmz8dJ/IMG-20240209-WA0065.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:50" data-category="palm"><img src="https://i.ibb.co/B24grVjd/IMG-20240209-WA0073.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:51" data-category="palm"><img src="https://i.ibb.co/MyvwP7ZJ/IMG-20240212-WA0017.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:52" data-category="palm"><img src="https://i.ibb.co/dsyFWd9v/IMG-20240212-WA0012.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:53" data-category="palm"><img src="https://i.ibb.co/C5XJVM4L/IMG-20240212-WA0015.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:54" data-category="palm"><img src="https://i.ibb.co/tPLDH1Td/IMG-20240209-WA0069.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:55" data-category="palm"><img src="https://i.ibb.co/nG401hP/IMG-20240209-WA0066.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:56" data-category="palm"><img src="https://i.ibb.co/21PSPQDt/IMG-20240212-WA0014.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:57" data-category="palm"><img src="https://i.ibb.co/d47z0rfF/IMG-20240209-WA0067.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:58" data-category="palm"><img src="https://i.ibb.co/RpT3qJ5q/IMG-20240209-WA0068.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:59" data-category="palm"><img src="https://i.ibb.co/DHRbWcJK/IMG-20240209-WA0071.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:60" data-category="palm"><img src="https://i.ibb.co/hJkwxVJT/IMG-20240209-WA0034.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:61" data-category="palm"><img src="https://i.ibb.co/FLjCPSS1/IMG-20240209-WA0053.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:62" data-category="palm"><img src="https://i.ibb.co/Kj6TTsSQ/IMG-20240419-WA0058.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:63" data-category="palm"><img src="https://i.ibb.co/1YqbrFNF/IMG-20240209-WA0072.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:64" data-category="palm"><img src="https://i.ibb.co/v4YXStrJ/IMG-20240419-WA0061.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:65" data-category="palm"><img src="https://i.ibb.co/d4NfGwPC/IMG-20260212-WA0003.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:66" data-category="palm"><img src="https://i.ibb.co/G4wNK6Nk/IMG-20260212-WA0002.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:67" data-category="palm"><img src="https://i.ibb.co/x81NFbNs/IMG-20240418-WA0107.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:68" data-category="palm"><img src="https://i.ibb.co/j9mCkJp1/IMG-20240212-WA0007.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:69" data-category="palm"><img src="https://i.ibb.co/JjpLVL8g/IMG-20260212-WA0005.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:70" data-category="palm"><img src="https://i.ibb.co/Myhp8YYb/image-N1.jpg" alt="نخيل"></div>
+                <div class="slider-item" style="--i:71" data-category="palm"><img src="https://i.ibb.co/203wk2sw/image-N2.jpg" alt="نخيل"></div>
+                
+                <!-- شبوك 15 صورة -->
+                <div class="slider-item" style="--i:72" data-category="fence"><img src="https://i.ibb.co/4ZcHHh3M/IMG-20251225-WA0029.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:73" data-category="fence"><img src="https://i.ibb.co/nszyxDXq/IMG-20251225-WA0027.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:74" data-category="fence"><img src="https://i.ibb.co/fVyB7zgR/IMG-20251225-WA0026.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:75" data-category="fence"><img src="https://i.ibb.co/JW7YzjtY/IMG-20251225-WA0031.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:76" data-category="fence"><img src="https://i.ibb.co/5h3YcpRC/IMG-20251225-WA0032.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:77" data-category="fence"><img src="https://i.ibb.co/dw5zbWsw/IMG-20251225-WA0033.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:78" data-category="fence"><img src="https://i.ibb.co/nMLyVqC2/IMG-20251225-WA0034.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:79" data-category="fence"><img src="https://i.ibb.co/HLyrt39Y/Whats-App-Image-2025-08-13-at-4-35-33-PM-4.webp" alt="شبوك"></div>
+                <div class="slider-item" style="--i:80" data-category="fence"><img src="https://i.ibb.co/BVD3bFPw/Whats-App-Image-2025-08-13-at-4-35-32-PM-3.webp" alt="شبوك"></div>
+                <div class="slider-item" style="--i:81" data-category="fence"><img src="https://i.ibb.co/C3Mr14v4/Whats-App-Image-2025-08-13-at-4-34-42-PM-2.webp" alt="شبوك"></div>
+                <div class="slider-item" style="--i:82" data-category="fence"><img src="https://i.ibb.co/S7BzP9jR/IMG-20251225-WA0037.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:83" data-category="fence"><img src="https://i.ibb.co/kspmQQPx/IMG-20251225-WA0036.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:84" data-category="fence"><img src="https://i.ibb.co/kgDg3xHs/IMG-20251225-WA0035.jpg" alt="شبوك"></div>
+                <div class="slider-item" style="--i:85" data-category="fence"><img src="https://i.ibb.co/yctZstRm/Whats-App-Image-2025-08-13-at-4-34-41-PM.webp" alt="شبوك"></div>
+                <div class="slider-item" style="--i:86" data-category="fence"><img src="https://i.ibb.co/8n1TSnYn/Whats-App-Image-2025-08-13-at-4-34-43-PM.webp" alt="شبوك"></div>
+            </div>
+            <div class="slider-controls">
+                <button class="control-btn" onclick="rotateSlider('left')"><i class="fas fa-chevron-left"></i></button>
+                <button class="control-btn" onclick="rotateSlider('right')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== أقسام الخدمات الثلاثة ===== -->
+    <div class="services-3d-section">
+        <div class="services-title">
+            <h2>خدماتنا الأساسية</h2>
+        </div>
+        <div class="services-grid-3d">
+            <!-- نخيل -->
+            <div class="card-3d">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image">
+                            <img src="https://i.ibb.co/7JfKRnxW/IMG-20260212-WA0004olive.jpg" alt="نخيل">
+                            <div class="card-icon-3d"><i class="fas fa-tree"></i></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>النخيل</h3>
+                            <div class="card-desc">
+                                غرس فسائل، تلقيح، تقليم، مكافحة سوسة، تشكيل جريد، نخيل ملكي، مدجول، برحي، خلاص، سكري.
+                            </div>
+                            <a href="https://wa.me/966504152836?text=السلام%20عليكم%20،%20أريد%20طلب%20خدمة%20النخيل" class="btn-3d" target="_blank"><i class="fab fa-whatsapp"></i> طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- زيتون -->
+            <div class="card-3d">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image">
+                            <img src="https://i.ibb.co/jkncN7NP/image1.jpg" alt="زيتون">
+                            <div class="card-icon-3d"><i class="fas fa-olive"></i></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>الزيتون</h3>
+                            <div class="card-desc">
+                                شتلات زيتون إسباني وروماني، غرس، تقليم، تطعيم، مكافحة ذبابة، قطاف، عصر، زيت زيتون بكر.
+                            </div>
+                            <a href="https://wa.me/966504152836?text=السلام%20عليكم%20،%20أريد%20طلب%20خدمة%20الزيتون" class="btn-3d" target="_blank"><i class="fab fa-whatsapp"></i> طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- شبوك -->
+            <div class="card-3d">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image">
+                            <img src="https://i.ibb.co/4ZcHHh3M/IMG-20251225-WA0029.jpg" alt="شبوك">
+                            <div class="card-icon-3d"><i class="fas fa-fence"></i></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>الشبوك</h3>
+                            <div class="card-desc">
+                                شبوك زراعية، مزارع، حماية، ألمنيوم، مجلفنة، ضد الطيور، ملاعب، استراحات، توريد وتركيب.
+                            </div>
+                            <a href="https://wa.me/966504152836?text=السلام%20عليكم%20،%20أريد%20طلب%20خدمة%20الشبوك" class="btn-3d" target="_blank"><i class="fab fa-whatsapp"></i> طلب الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== قسم المظلات ===== -->
+    <div class="mzalat-section">
+        <div class="mzalat-container">
+            <div class="mzalat-title">
+                <h2>المظلات</h2>
+            </div>
+            <div class="mzalat-card">
+                <div class="mzalat-inner">
+                    <div class="mzalat-front">
+                        <div class="mzalat-image">
+                            <img src="https://i.postimg.cc/BbmQY792/0157.webp" alt="مظلات">
+                            <div class="mzalat-icon"><i class="fas fa-umbrella"></i></div>
+                        </div>
+                        <div class="mzalat-content">
+                            <h3>المظلات</h3>
+                            <div class="phone-number">
+                                <i class="fas fa-phone-alt"></i>
+                                <span dir="ltr">0559945734</span>
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="mzalat-desc">
+                                مظلات سيارات، مظلات مدارس، مظلات مسابح، برجولات، مظلات حدائق، 
+                                مظلات خشبية، مظلات حديد، مظلات قماش، تركيب وتوريد وصيانة.
+                            </div>
+                            <a href="https://wa.me/966559945734?text=السلام%20عليكم%20،%20أريد%20طلب%20خدمة%20المظلات" class="btn-3d" target="_blank"><i class="fab fa-whatsapp"></i> طلب خدمة المظلات</a>
+                            <a href="tel:0559945734" class="btn-3d" style="margin-top: 10px; background: #004c7a; color: white; box-shadow: 0 8px 0 #032b3a;"><i class="fas fa-phone-alt"></i> اتصال مباشر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mzalat-gallery">
+                <img src="https://i.postimg.cc/y6jd8xJp/0159.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/nV2zhrsR/0164.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/qq1MbDV8/0196.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/FzTsWC5y/0202.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/sxTD6Hd9/0206.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/6qM5jbJp/305559a349b80630360493f58267d3c2.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/ZnwK7stR/5cde57066796971573080118cb986df5.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/VvKLGZQL/e9f709bb6b47bc6fd8c6b679e7a67791-1.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/SRgNT1Fm/IMG-20240421-WA0000.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/SRgNT1FS/IMG-20240421-WA0005.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/BbmQY793/IMG-20240421-WA0008.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/90mQB5SQ/IMG-20240421-WA0015.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/prsXGcbM/IMG-20240421-WA0016.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/zvxXt2Zm/IMG-20240421-WA0017.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/fyzRvnFM/mzlat-alahsaʾ-1.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/nr3cRSbt/mzlat-alahsaʾ-1-1.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/GtXh7gw3/mzlat-alahsaʾ-10.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/gjgkStFm/mzlat-alahsaʾ-8.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/d3sV9PXv/mqawl-mzlat-fy-alahsaʾ-11.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/J0rzQVgL/mqawl-mzlat-fy-alahsaʾ-14.webp" alt="مظلات">
+                <img src="https://i.postimg.cc/kGJgy3Zq/mqawl-mzlat-fy-alahsaʾ-15.webp" alt="مظلات">
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== نصوص كثيفة تحت الأقسام - سيو ومحتوى ===== -->
+    <div class="content-sections">
+        <div class="content-container">
+            
+            <!-- قسم 1: من نحن -->
+            <div class="content-card">
+                <h3><i class="fas fa-building"></i> من نحن</h3>
+                <div class="content-text">
+                    <p style="margin-bottom: 15px; font-size: 1.1rem;">مؤسسة الظل للخدمات الزراعية والمظلات، تأسست عام 2020، ونقدم خدمات متكاملة في زراعة النخيل والزيتون، وتركيب جميع أنواع الشبوك والمظلات. نمتلك فريق عمل متخصص بخبرة تزيد عن 15 عاماً في المجال الزراعي والإنشائي.</p>
+                    <p style="margin-bottom: 15px;">نعمل في جميع مدن المملكة العربية السعودية، ونسعى دائماً لتقديم أفضل الخدمات بأعلى جودة وأقل الأسعار. نضمن لعملائنا أعلى معايير الجودة والسلامة في جميع مشاريعنا.</p>
+                    <p>رؤيتنا: أن نكون الخيار الأول في مجال الخدمات الزراعية والمظلات على مستوى المملكة. رسالتنا: تقديم خدمات احترافية بأسعار تنافسية مع ضمان الجودة والالتزام بالمواعيد.</p>
+                </div>
+            </div>
+            
+            <!-- قسم 2: خدماتنا بالتفصيل -->
+            <div class="content-card">
+                <h3><i class="fas fa-list-check"></i> خدماتنا المتكاملة</h3>
+                <div class="content-text">
+                    <p style="margin-bottom: 15px; font-weight: 700; color: #ffe28c;">🌴 خدمات النخيل:</p>
+                    <p style="margin-bottom: 10px;">توريد وزراعة جميع أنواع فسائل النخيل (المدجول - البرحي - الخلاص - السكري - الصقعي - الرزيز - الخصاب - نخل واشنطنيا - نخيل الزينة). خدمات التلقيح والتقليم والتشكيل والتسليح. مكافحة آفات النخيل والسوسة الحمراء. تنزيل الرطب وجني البلح وتعبئة التمور. تصميم مزارع النخيل واستشارات زراعية متكاملة.</p>
+                    
+                    <p style="margin-bottom: 15px; margin-top: 20px; font-weight: 700; color: #ffe28c;">🫒 خدمات الزيتون:</p>
+                    <p style="margin-bottom: 10px;">توريد شتلات زيتون إسباني وروماني وشملالي وصوراني وكالاماتا. غرس وتقليم وتطعيم أشجار الزيتون. مكافحة ذبابة ثمار الزيتون. قطاف وعصر الزيتون وإنتاج زيت زيتون بكر. توريد زيتون مخلل بأنواعه.</p>
+                    
+                    <p style="margin-bottom: 15px; margin-top: 20px; font-weight: 700; color: #ffe28c;">🛡️ خدمات الشبوك:</p>
+                    <p style="margin-bottom: 10px;">تركيب جميع أنواع الشبوك الزراعية والصناعية. شبوك ألمنيوم وشبوك مجلفنة وشبوك بلاستيك. شبوك حماية المزارع من الحيوانات والطيور والقوارض. شبوك ملاعب خماسي وتنس وشبوك استراحات وأحواش. توريد وتركيب وصيانة وفك وتركيب جميع أنواع الشبوك.</p>
+                    
+                    <p style="margin-bottom: 15px; margin-top: 20px; font-weight: 700; color: #ffe28c;">☂️ خدمات المظلات:</p>
+                    <p style="margin-bottom: 10px;">تصميم وتركيب جميع أنواع المظلات: مظلات سيارات، مظلات مدارس، مظلات مسابح، برجولات خشبية وحديدية، مظلات حدائق، مظلات قماش، مظلات سحاب متحركة، مظلات مداخل. نوفر أفضل الخامات وأحدث التصاميم بضمان يصل إلى 10 سنوات.</p>
+                </div>
+            </div>
+            
+            <!-- قسم 3: الكلمات المفتاحية للسيو (SEO) -->
+            <div class="content-card">
+                <h3><i class="fas fa-key"></i> كلمات مفتاحية - الأكثر بحثاً</h3>
+                <div class="keywords-grid">
+                    <div class="keyword-item"><i class="fas fa-tag"></i> نخيل مثمر</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> فسائل نخيل</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> نخيل ملكي</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> نخيل مدجول</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> نخيل برحي</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> نخيل خلاص</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> نخيل سكري</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> نخيل صقعي</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تلقيح نخيل</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تقليم نخيل</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مكافحة سوسة النخيل</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تسليح نخيل</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> غرس نخيل</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تنزيل رطب</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> جني البلح</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تعبئة تمور</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> نخيل واشنطنيا</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> نخيل الزينة</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> زيتون إسباني</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> زيتون روماني</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> شتلات زيتون</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تقليم زيتون</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تطعيم زيتون</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مكافحة ذبابة الزيتون</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> قطاف الزيتون</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> عصر زيتون</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> زيت زيتون بكر</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> زيتون مخلل</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> شبوك زراعية</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> شبوك مزارع</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> شبوك حماية</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> شبوك ألمنيوم</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> شبوك مجلفنة</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> شبوك ضد الطيور</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> شبوك ملاعب</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تركيب شبوك</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> توريد شبوك</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> صيانة شبوك</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> شبوك بيوت محمية</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مظلات سيارات</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مظلات مدارس</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مظلات مسابح</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> برجولات</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مظلات حدائق</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مظلات خشبية</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مظلات حديد</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تركيب مظلات</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> توريد مظلات</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> استشارات زراعية</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تصميم مزارع</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> فني نخيل</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> فني شبوك</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مقاول زراعي</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> ترويسة زراعية</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> بيوت محمية</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> أنظمة ري</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> تنقيط</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> أسمدة زراعية</div>
+                    <div class="keyword-item"><i class="fas fa-tag"></i> مبيدات زراعية</div>
+                </div>
+                <p style="color: #ffe28c; margin-top: 25px; font-size: 0.9rem; text-align: center;">
+                    <i class="fas fa-chart-line"></i> أكثر من 200 كلمة مفتاحية لتحسين ظهورك في محركات البحث
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== توقيع المصمم سليمان الحكمي مع الواتساب ===== -->
+    <div class="designer-signature">
+        <div class="signature-content">
+            <h4><i class="fas fa-code"></i> صمم الموقع</h4>
+            <p style="font-size: 2rem; font-weight: 900; color: white; text-shadow: 0 4px 0 #043340;">سليمان الحكمي</p>
+            <a href="https://wa.me/966551987351?text=السلام%20عليكم%20،%20أريد%20استشارة%20تصميم%20موقع" class="signature-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> 0551987351
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <p style="margin-top: 20px; color: rgba(255,255,255,0.8); font-size: 0.95rem;">
+                <i class="fas fa-globe"></i> تصميم وبرمجة مواقع - تطوير أنظمة - حلول رقمية متكاملة
+            </p>
+        </div>
+    </div>
+
+    <!-- ===== أزرار الاتصال العائمة ===== -->
+    <div class="float-buttons">
+        <div class="float-left">
+            <a href="https://wa.me/966504152836?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%8C%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D9%85%D9%86%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D8%A7%D9%84%D8%B8%D9%84" class="float-btn whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>واتساب</span>
+            </a>
+        </div>
+        <div class="float-right">
+            <a href="tel:0504152836" class="float-btn call-btn">
+                <i class="fas fa-phone-alt"></i>
+                <span>اتصل</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let currentRotation = 0;
+        let autoRotateInterval;
+        const wrapper = document.getElementById('sliderWrapper');
+        
+        function rotateSlider(direction) {
+            wrapper.style.animation = 'none';
+            if (direction === 'left') {
+                currentRotation += 30;
+            } else {
+                currentRotation -= 30;
+            }
+            wrapper.style.transform = `rotateY(${currentRotation}deg)`;
+            clearTimeout(autoRotateInterval);
+            autoRotateInterval = setTimeout(() => {
+                wrapper.style.animation = 'autoRotate 40s linear infinite';
+            }, 5000);
+        }
+
+        const tabs = document.querySelectorAll('.tab-btn');
+        const items = document.querySelectorAll('.slider-item');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const category = tab.dataset.category;
+                items.forEach(item => {
+                    item.style.display = item.dataset.category === category ? 'block' : 'none';
+                });
+                wrapper.style.animation = 'none';
+                currentRotation = 0;
+                wrapper.style.transform = `rotateY(0deg)`;
+                wrapper.style.animation = 'autoRotate 40s linear infinite';
+            });
+        });
+
+        document.querySelector('[data-category="olive"]').click();
+    </script>
+</body>
+</html>

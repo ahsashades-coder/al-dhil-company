@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة الظل · خدمات النخيل</title>
+    <meta name="description" content="خدمات النخيل المتكاملة: غرس فسائل، تلقيح، تقليم، مكافحة سوسة، تسليح، نخيل ملكي، مدجول، برحي، خلاص، سكري. اتصل الآن 0504152836">
+    <meta name="keywords" content="نخيل, فسائل نخيل, نخيل ملكي, نخيل مدجول, نخيل برحي, نخيل خلاص, نخيل سكري, نخيل صقعي, تلقيح نخيل, تقليم نخيل, مكافحة سوسة النخيل, تسليح نخيل, غرس نخيل, تسميد نخيل, ري النخيل, تنزيل رطب, جني البلح, تعبئة تمور, نخيل واشنطنيا, نخيل الزينة, نخيل الشوارع">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Tajawal', sans-serif; }
+        body { background: linear-gradient(135deg, #0a2e38, #1c5c6c); color: white; }
+        .page-header { 
+            background: linear-gradient(145deg, #064055, #0f586e); 
+            padding: 30px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid #ffe28c;
+            box-shadow: 0 10px 0 #043340;
+        }
+        .page-header h1 { 
+            font-size: 3rem; 
+            font-weight: 900; 
+            text-shadow: 0 6px 0 #043340;
+            margin-bottom: 10px;
+        }
+        .page-header p { 
+            font-size: 1.3rem; 
+            color: #ffe28c;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+        }
+        .phone-section {
+            background: rgba(255,226,140,0.15);
+            border: 3px solid #ffe28c;
+            border-radius: 80px;
+            padding: 20px 30px;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ffe28c;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 0 #043340;
+        }
+        .phone-section i {
+            font-size: 2.5rem;
+        }
+        .phone-section span {
+            direction: ltr;
+            display: inline-block;
+        }
+        h2 { 
+            color: #ffe28c; 
+            font-size: 2rem; 
+            margin-bottom: 30px; 
+            border-bottom: 4px solid #ffe28c; 
+            padding-bottom: 15px; 
+            font-weight: 900;
+            text-shadow: 0 3px 0 #043340;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #ffe28c;
+            transition: transform 0.3s;
+            box-shadow: 0 8px 0 #043340;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.1);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background: rgba(255,255,255,0.05);
+            border: 2px solid #ffe28c;
+            border-radius: 30px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 0 #043340;
+            transition: all 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 0 #043340;
+        }
+        .service-card i {
+            font-size: 2.5rem;
+            color: #ffe28c;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        .keywords-section {
+            background: rgba(255,255,255,0.05);
+            border: 3px solid #ffe28c;
+            border-radius: 30px;
+            padding: 35px;
+            margin-top: 50px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 0 #043340;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 25px;
+        }
+        .keyword {
+            background: rgba(255,226,140,0.1);
+            border: 1px solid #ffe28c;
+            border-radius: 40px;
+            padding: 10px 18px;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        .keyword:hover {
+            background: #ffe28c;
+            color: #043340;
+            transform: translateX(-5px);
+        }
+        .keyword i {
+            color: #ffe28c;
+            font-size: 0.8rem;
+        }
+        .keyword:hover i {
+            color: #043340;
+        }
+        .btn {
+            display: inline-block;
+            background: #ffe28c;
+            color: #043340;
+            padding: 15px 40px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.2rem;
+            margin-top: 30px;
+            border: 3px solid white;
+            box-shadow: 0 10px 0 #7a5e1a;
+            transition: all 0.3s;
+        }
+        .btn i {
+            margin-left: 10px;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: white;
+            box-shadow: 0 12px 0 #7a5e1a;
+        }
+        .btn-call {
+            background: #004c7a;
+            color: white;
+            box-shadow: 0 10px 0 #032b3a;
+            margin-right: 15px;
+        }
+        .btn-call:hover {
+            background: white;
+            color: #004c7a;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #043340;
+            margin-top: 50px;
+            border-top: 5px solid #ffe28c;
+        }
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2.2rem; }
+            .phone-section { font-size: 1.5rem; padding: 15px; }
+            .phone-section i { font-size: 1.8rem; }
+            .btn { display: block; margin: 20px 0; }
+            .btn-call { margin-right: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <div class="page-header">
+        <h1><i class="fas fa-tree"></i> النخيل</h1>
+        <p>خدمات متكاملة لزراعة وصيانة النخيل</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- رقم الهاتف - 0504152836 -->
+        <div class="phone-section">
+            <i class="fas fa-phone-alt"></i>
+            <span dir="ltr">0504152836</span>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+
+        <!-- صور النخيل - 48 صورة -->
+        <h2><i class="fas fa-images"></i> معرض صور النخيل</h2>
+        <div class="gallery-grid">
+            <img src="https://i.ibb.co/7JfKRnxW/IMG-20260212-WA0004olive.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/8gq6HB9y/image-N3.webp" alt="نخيل">
+            <img src="https://i.ibb.co/v4Lh8Xm4/image-N4.webp" alt="نخيل">
+            <img src="https://i.ibb.co/C3nN00tr/Whats-App-Image-2025-08-13-at-4-31-57-PM-2-3.webp" alt="نخيل">
+            <img src="https://i.ibb.co/8gzJGm35/Whats-App-Image-2025-08-13-at-4-31-58-PM-2.webp" alt="نخيل">
+            <img src="https://i.ibb.co/twhTF9Wv/Whats-App-Image-2025-08-13-at-4-31-58-PM-1.webp" alt="نخيل">
+            <img src="https://i.ibb.co/ymDcXTYG/Whats-App-Image-2025-08-13-at-4-31-57-PM-4.webp" alt="نخيل">
+            <img src="https://i.ibb.co/N2Prfj38/Whats-App-Image-2025-08-13-at-4-31-57-PM-3-2.webp" alt="نخيل">
+            <img src="https://i.ibb.co/3my6vTRJ/Whats-App-Image-2025-08-13-at-4-31-58-PM-3-1.webp" alt="نخيل">
+            <img src="https://i.ibb.co/DDNFCK2q/Whats-App-Image-2025-08-13-at-4-31-59-PM-1-1.webp" alt="نخيل">
+            <img src="https://i.ibb.co/HfzNXF2L/Whats-App-Image-2025-08-13-at-4-31-58-PM.webp" alt="نخيل">
+            <img src="https://i.ibb.co/B23fyn1c/Whats-App-Image-2025-08-13-at-4-31-59-PM-2.webp" alt="نخيل">
+            <img src="https://i.ibb.co/nqs4RLT0/Whats-App-Image-2025-08-13-at-4-32-00-PM-2-1.webp" alt="نخيل">
+            <img src="https://i.ibb.co/RG67v3cp/Whats-App-Image-2025-08-13-at-4-32-00-PM-1.webp" alt="نخيل">
+            <img src="https://i.ibb.co/DD247X87/Whats-App-Image-2025-08-13-at-4-31-59-PM-4.webp" alt="نخيل">
+            <img src="https://i.ibb.co/3mY2DTSj/Whats-App-Image-2025-08-13-at-4-31-59-PM-3-1.webp" alt="نخيل">
+            <img src="https://i.ibb.co/7t49sDqC/Whats-App-Image-2025-08-13-at-4-32-02-PM-3.webp" alt="نخيل">
+            <img src="https://i.ibb.co/fYnBQ2LV/Whats-App-Image-2025-08-13-at-4-32-10-PM-3-1.webp" alt="نخيل">
+            <img src="https://i.ibb.co/hJcBWhV9/4630a6bc0fedcb08241db32604cbf7b0.webp" alt="نخيل">
+            <img src="https://i.ibb.co/1Yb0BYkq/Whats-App-Image-2025-08-13-at-4-32-06-PM-1-1.webp" alt="نخيل">
+            <img src="https://i.ibb.co/tT27m0NY/washingtonia-seeds.webp" alt="نخيل">
+            <img src="https://i.ibb.co/ZpdZn8WH/Whats-App-Image-2025-08-13-at-4-32-02-PM-2-1.webp" alt="نخيل">
+            <img src="https://i.ibb.co/rfHQGxGH/Whats-App-Image-2025-08-13-at-4-32-11-PM-3.webp" alt="نخيل">
+            <img src="https://i.ibb.co/CpRV7GFd/IMG-20240715-WA0046.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/mLDDh3K/7331bb871ab947b9a34313dba0af5d2d.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/hFtmr3h7/IMG-20240209-WA0046.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/fbmqDth/IMG-20240212-WA0008.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/35Zmz8dJ/IMG-20240209-WA0065.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/B24grVjd/IMG-20240209-WA0073.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/MyvwP7ZJ/IMG-20240212-WA0017.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/dsyFWd9v/IMG-20240212-WA0012.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/C5XJVM4L/IMG-20240212-WA0015.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/tPLDH1Td/IMG-20240209-WA0069.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/nG401hP/IMG-20240209-WA0066.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/21PSPQDt/IMG-20240212-WA0014.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/d47z0rfF/IMG-20240209-WA0067.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/RpT3qJ5q/IMG-20240209-WA0068.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/DHRbWcJK/IMG-20240209-WA0071.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/hJkwxVJT/IMG-20240209-WA0034.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/FLjCPSS1/IMG-20240209-WA0053.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/Kj6TTsSQ/IMG-20240419-WA0058.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/1YqbrFNF/IMG-20240209-WA0072.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/v4YXStrJ/IMG-20240419-WA0061.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/d4NfGwPC/IMG-20260212-WA0003.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/G4wNK6Nk/IMG-20260212-WA0002.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/x81NFbNs/IMG-20240418-WA0107.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/j9mCkJp1/IMG-20240212-WA0007.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/JjpLVL8g/IMG-20260212-WA0005.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/Myhp8YYb/image-N1.jpg" alt="نخيل">
+            <img src="https://i.ibb.co/203wk2sw/image-N2.jpg" alt="نخيل">
+        </div>
+
+        <!-- خدمات النخيل -->
+        <h2><i class="fas fa-list-check"></i> خدمات النخيل</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-seedling"></i>
+                <h3>غرس فسائل</h3>
+                <p>توريد وزراعة جميع أنواع فسائل النخيل بأعلى جودة وأفضل الأسعار.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>تلقيح نخيل</h3>
+                <p>تلقيح يدوي وآلي بخبرة 15 عام، لضمان إنتاجية عالية.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cut"></i>
+                <h3>تقليم وتشكيل</h3>
+                <p>تقليم وتشكيل جريد النخيل بأحدث الأساليب والمعدات.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bug"></i>
+                <h3>مكافحة سوسة النخيل</h3>
+                <p>برامج مكافحة متكاملة لسوسة النخيل الحمراء بضمان فعال.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tint"></i>
+                <h3>تسليح نخيل</h3>
+                <p>تسليح النخيل وأنظمة ري متطورة لزيادة الإنتاج.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-apple-alt"></i>
+                <h3>جني البلح وتعبئة التمور</h3>
+                <p>تنزيل رطب، جني البلح، وتعبئة تمور بأجود المواصفات.</p>
+            </div>
+        </div>
+
+        <!-- أصناف النخيل -->
+        <div style="margin-top: 50px; background: rgba(255,226,140,0.05); border-radius: 30px; padding: 30px; border: 2px solid #ffe28c;">
+            <h2 style="border-bottom-color: #ffe28c;"><i class="fas fa-tags"></i> أصناف النخيل</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 25px;">
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">مدجول</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">برحي</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">خلاص</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">سكري</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">صقعي</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">خصاب</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">رزيز</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">واشنطنيا</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">نخيل ملكي</span>
+            </div>
+        </div>
+
+        <!-- كلمات مفتاحية -->
+        <div class="keywords-section">
+            <h2 style="border-bottom-color: #ffe28c; margin-bottom: 0;">
+                <i class="fas fa-key"></i> كلمات مفتاحية - النخيل
+            </h2>
+            <p style="color: #ffe28c; margin-top: 10px; font-size: 1.1rem;">
+                أكثر من 150 كلمة مفتاحية لتصدر نتائج البحث
+            </p>
+            <div class="keywords-grid">
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> فسائل نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل ملكي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل مدجول</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل برحي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل خلاص</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل سكري</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل صقعي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل خصاب</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل رزيز</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تلقيح نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تقليم نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تشكيل جريد</span>
+                <span class="keyword"><i class="fas fa-tag"></i> مكافحة سوسة النخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تسليح نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> غرس نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تسميد نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> ري النخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تنزيل رطب</span>
+                <span class="keyword"><i class="fas fa-tag"></i> جني البلح</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تعبئة تمور</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل واشنطنيا</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل الزينة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> نخيل الشوارع</span>
+                <span class="keyword"><i class="fas fa-tag"></i> مزرعة نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> مشتل نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> فني نخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> مقاول نخيل</span>
+            </div>
+        </div>
+
+        <!-- أزرار طلب الخدمة -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://wa.me/966504152836?text=السلام%20عليكم%20،%20أريد%20طلب%20خدمة%20النخيل" class="btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+            <a href="tel:0504152836" class="btn btn-call">
+                <i class="fas fa-phone-alt"></i> اتصال مباشر
+            </a>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <div class="footer">
+        <p style="font-size: 1.2rem; font-weight: 700;">مؤسسة الظل · جميع الحقوق محفوظة 2026</p>
+        <p style="color: #ffe28c; margin-top: 10px;">رقم النخيل: 0504152836</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة الظل · خدمات الزيتون</title>
+    <meta name="description" content="خدمات الزيتون المتكاملة: شتلات زيتون إسباني وروماني، غرس، تقليم، تطعيم، مكافحة ذبابة الزيتون، قطاف، عصر، زيت زيتون بكر. اتصل الآن 0504152836">
+    <meta name="keywords" content="زيتون, شتلات زيتون, زيتون إسباني, زيتون روماني, زيتون شملالي, زيتون صوراني, زيتون كالاماتا, غرس زيتون, تقليم زيتون, تطعيم زيتون, مكافحة ذبابة الزيتون, قطاف الزيتون, عصر زيتون, زيت زيتون بكر, زيتون مخلل">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Tajawal', sans-serif; }
+        body { background: linear-gradient(135deg, #1a3e3c, #0e4d3b); color: white; }
+        .page-header { 
+            background: linear-gradient(145deg, #0e4d3b, #1a6b4a); 
+            padding: 30px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid #ffe28c;
+            box-shadow: 0 10px 0 #043340;
+        }
+        .page-header h1 { 
+            font-size: 3rem; 
+            font-weight: 900; 
+            text-shadow: 0 6px 0 #043340;
+            margin-bottom: 10px;
+        }
+        .page-header p { 
+            font-size: 1.3rem; 
+            color: #ffe28c;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+        }
+        .phone-section {
+            background: rgba(255,226,140,0.15);
+            border: 3px solid #ffe28c;
+            border-radius: 80px;
+            padding: 20px 30px;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ffe28c;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 0 #043340;
+        }
+        .phone-section i {
+            font-size: 2.5rem;
+        }
+        .phone-section span {
+            direction: ltr;
+            display: inline-block;
+        }
+        h2 { 
+            color: #ffe28c; 
+            font-size: 2rem; 
+            margin-bottom: 30px; 
+            border-bottom: 4px solid #ffe28c; 
+            padding-bottom: 15px; 
+            font-weight: 900;
+            text-shadow: 0 3px 0 #043340;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #ffe28c;
+            transition: transform 0.3s;
+            box-shadow: 0 8px 0 #043340;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.1);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background: rgba(255,255,255,0.05);
+            border: 2px solid #ffe28c;
+            border-radius: 30px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 0 #043340;
+            transition: all 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 0 #043340;
+        }
+        .service-card i {
+            font-size: 2.5rem;
+            color: #ffe28c;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        .keywords-section {
+            background: rgba(255,255,255,0.05);
+            border: 3px solid #ffe28c;
+            border-radius: 30px;
+            padding: 35px;
+            margin-top: 50px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 0 #043340;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 25px;
+        }
+        .keyword {
+            background: rgba(255,226,140,0.1);
+            border: 1px solid #ffe28c;
+            border-radius: 40px;
+            padding: 10px 18px;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        .keyword:hover {
+            background: #ffe28c;
+            color: #043340;
+            transform: translateX(-5px);
+        }
+        .keyword i {
+            color: #ffe28c;
+            font-size: 0.8rem;
+        }
+        .keyword:hover i {
+            color: #043340;
+        }
+        .btn {
+            display: inline-block;
+            background: #ffe28c;
+            color: #043340;
+            padding: 15px 40px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.2rem;
+            margin-top: 30px;
+            border: 3px solid white;
+            box-shadow: 0 10px 0 #7a5e1a;
+            transition: all 0.3s;
+        }
+        .btn i {
+            margin-left: 10px;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: white;
+            box-shadow: 0 12px 0 #7a5e1a;
+        }
+        .btn-call {
+            background: #004c7a;
+            color: white;
+            box-shadow: 0 10px 0 #032b3a;
+            margin-right: 15px;
+        }
+        .btn-call:hover {
+            background: white;
+            color: #004c7a;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #043340;
+            margin-top: 50px;
+            border-top: 5px solid #ffe28c;
+        }
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2.2rem; }
+            .phone-section { font-size: 1.5rem; padding: 15px; }
+            .phone-section i { font-size: 1.8rem; }
+            .btn { display: block; margin: 20px 0; }
+            .btn-call { margin-right: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <div class="page-header">
+        <h1><i class="fas fa-olive"></i> الزيتون</h1>
+        <p>شتلات زيتون - غرس - تقليم - عصر - زيت بكر</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- رقم الهاتف - 0504152836 -->
+        <div class="phone-section">
+            <i class="fas fa-phone-alt"></i>
+            <span dir="ltr">0504152836</span>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+
+        <!-- صور الزيتون - 22 صورة -->
+        <h2><i class="fas fa-images"></i> معرض صور الزيتون</h2>
+        <div class="gallery-grid">
+            <img src="https://i.ibb.co/CsYkWnPF/Whats-App-Image-2025-08-13-at-4-32-04-PM-1-1olive.webp" alt="زيتون">
+            <img src="https://i.ibb.co/N2MxqZ7T/Whats-App-Image-2025-08-13-at-4-32-04-PM-2-1olive.webp" alt="زيتون">
+            <img src="https://i.ibb.co/b57W0xmw/Whats-App-Image-2025-08-13-at-4-32-04-PM-3olive.webp" alt="زيتون">
+            <img src="https://i.ibb.co/jkncN7NP/image1.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/HfSSPqjf/image2.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/hRZLHW1t/image3.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/FqqQ5TSw/image4.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/FkkqQwdx/image7.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/Z1GMYJy6/67d0d5bdcc3baolive.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/rGF1fF4B/image6.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/Qv1bstWj/image5.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/hFw0RPXS/image8.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/5gqk9Mhw/image9.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/1tbRw7gg/image10.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/JwjVQ5CX/image11.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/qL465zc9/IMG-20260212-WA0006olive.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/gFjf69kw/image13.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/5hczLs6q/image12.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/TDmFgg4Z/image16.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/Q3HTVP7s/image15.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/jvRtbdzx/IMG-20260212-WA0007olive.jpg" alt="زيتون">
+            <img src="https://i.ibb.co/dJ1Ffkr1/image14.jpg" alt="زيتون">
+        </div>
+
+        <!-- خدمات الزيتون -->
+        <h2><i class="fas fa-list-check"></i> خدمات الزيتون</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-seedling"></i>
+                <h3>شتلات زيتون</h3>
+                <p>توريد شتلات زيتون إسباني، روماني، شملالي، صوراني، كالاماتا.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tree"></i>
+                <h3>غرس زيتون</h3>
+                <p>زراعة شتلات الزيتون بطرق علمية حديثة.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cut"></i>
+                <h3>تقليم وتطعيم</h3>
+                <p>تقليم أشجار الزيتون وتطعيمها بأفضل الأصناف.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bug"></i>
+                <h3>مكافحة ذبابة الزيتون</h3>
+                <p>مكافحة آفات الزيتون وخاصة ذبابة ثمار الزيتون.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>قطاف الزيتون</h3>
+                <p>قطاف يدوي وآلي مع فرق متخصصة.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-oil-can"></i>
+                <h3>عصر زيتون</h3>
+                <p>إنتاج زيت زيتون بكر ممتاز بطرق عصر باردة.</p>
+            </div>
+        </div>
+
+        <!-- أصناف الزيتون -->
+        <div style="margin-top: 50px; background: rgba(255,226,140,0.05); border-radius: 30px; padding: 30px; border: 2px solid #ffe28c;">
+            <h2 style="border-bottom-color: #ffe28c;"><i class="fas fa-tags"></i> أصناف الزيتون</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 25px;">
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">إسباني</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">روماني</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">شملالي</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">صوراني</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">كالاماتا</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">مانزانيلو</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">أربيكينا</span>
+            </div>
+        </div>
+
+        <!-- كلمات مفتاحية -->
+        <div class="keywords-section">
+            <h2 style="border-bottom-color: #ffe28c; margin-bottom: 0;">
+                <i class="fas fa-key"></i> كلمات مفتاحية - الزيتون
+            </h2>
+            <p style="color: #ffe28c; margin-top: 10px; font-size: 1.1rem;">
+                أكثر من 150 كلمة مفتاحية لتصدر نتائج البحث
+            </p>
+            <div class="keywords-grid">
+                <span class="keyword"><i class="fas fa-tag"></i> زيتون</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شتلات زيتون</span>
+                <span class="keyword"><i class="fas fa-tag"></i> زيتون إسباني</span>
+                <span class="keyword"><i class="fas fa-tag"></i> زيتون روماني</span>
+                <span class="keyword"><i class="fas fa-tag"></i> زيتون شملالي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> زيتون صوراني</span>
+                <span class="keyword"><i class="fas fa-tag"></i> زيتون كالاماتا</span>
+                <span class="keyword"><i class="fas fa-tag"></i> غرس زيتون</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تقليم زيتون</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تطعيم زيتون</span>
+                <span class="keyword"><i class="fas fa-tag"></i> مكافحة ذبابة الزيتون</span>
+                <span class="keyword"><i class="fas fa-tag"></i> قطاف الزيتون</span>
+                <span class="keyword"><i class="fas fa-tag"></i> عصر زيتون</span>
+                <span class="keyword"><i class="fas fa-tag"></i> زيت زيتون بكر</span>
+                <span class="keyword"><i class="fas fa-tag"></i> زيتون مخلل</span>
+            </div>
+        </div>
+
+        <!-- أزرار طلب الخدمة -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://wa.me/966504152836?text=السلام%20عليكم%20،%20أريد%20طلب%20خدمة%20الزيتون" class="btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+            <a href="tel:0504152836" class="btn btn-call">
+                <i class="fas fa-phone-alt"></i> اتصال مباشر
+            </a>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <div class="footer">
+        <p style="font-size: 1.2rem; font-weight: 700;">مؤسسة الظل · جميع الحقوق محفوظة 2026</p>
+        <p style="color: #ffe28c; margin-top: 10px;">رقم الزيتون: 0504152836</p>
+    </div>
+
+</body>
+</html>

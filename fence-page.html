@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة الظل · خدمات الشبوك</title>
+    <meta name="description" content="خدمات الشبوك المتكاملة: شبوك زراعية، شبوك مزارع، شبوك حماية، شبوك ألمنيوم، شبوك مجلفنة، شبوك ملاعب، تركيب وصيانة شبوك. اتصل الآن 0504152836">
+    <meta name="keywords" content="شبوك, شبوك زراعية, شبوك مزارع, شبوك حماية, شبوك ألمنيوم, شبوك مجلفنة, شبوك بلاستيك, شبوك ضد الطيور, شبوك ملاعب, شبوك استراحات, تركيب شبوك, توريد شبوك, صيانة شبوك, سياج زراعي, أسوار شبك">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Tajawal', sans-serif; }
+        body { background: linear-gradient(135deg, #1e3a5f, #0a4b6e); color: white; }
+        .page-header { 
+            background: linear-gradient(145deg, #0a4b6e, #1e6a8f); 
+            padding: 30px 20px; 
+            text-align: center; 
+            border-bottom: 5px solid #ffe28c;
+            box-shadow: 0 10px 0 #043340;
+        }
+        .page-header h1 { 
+            font-size: 3rem; 
+            font-weight: 900; 
+            text-shadow: 0 6px 0 #043340;
+            margin-bottom: 10px;
+        }
+        .page-header p { 
+            font-size: 1.3rem; 
+            color: #ffe28c;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+        }
+        .phone-section {
+            background: rgba(255,226,140,0.15);
+            border: 3px solid #ffe28c;
+            border-radius: 80px;
+            padding: 20px 30px;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ffe28c;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 0 #043340;
+        }
+        .phone-section i {
+            font-size: 2.5rem;
+        }
+        .phone-section span {
+            direction: ltr;
+            display: inline-block;
+        }
+        h2 { 
+            color: #ffe28c; 
+            font-size: 2rem; 
+            margin-bottom: 30px; 
+            border-bottom: 4px solid #ffe28c; 
+            padding-bottom: 15px; 
+            font-weight: 900;
+            text-shadow: 0 3px 0 #043340;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #ffe28c;
+            transition: transform 0.3s;
+            box-shadow: 0 8px 0 #043340;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.1);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background: rgba(255,255,255,0.05);
+            border: 2px solid #ffe28c;
+            border-radius: 30px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 0 #043340;
+            transition: all 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 0 #043340;
+        }
+        .service-card i {
+            font-size: 2.5rem;
+            color: #ffe28c;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        .keywords-section {
+            background: rgba(255,255,255,0.05);
+            border: 3px solid #ffe28c;
+            border-radius: 30px;
+            padding: 35px;
+            margin-top: 50px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 0 #043340;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 25px;
+        }
+        .keyword {
+            background: rgba(255,226,140,0.1);
+            border: 1px solid #ffe28c;
+            border-radius: 40px;
+            padding: 10px 18px;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        .keyword:hover {
+            background: #ffe28c;
+            color: #043340;
+            transform: translateX(-5px);
+        }
+        .keyword i {
+            color: #ffe28c;
+            font-size: 0.8rem;
+        }
+        .keyword:hover i {
+            color: #043340;
+        }
+        .btn {
+            display: inline-block;
+            background: #ffe28c;
+            color: #043340;
+            padding: 15px 40px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.2rem;
+            margin-top: 30px;
+            border: 3px solid white;
+            box-shadow: 0 10px 0 #7a5e1a;
+            transition: all 0.3s;
+        }
+        .btn i {
+            margin-left: 10px;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: white;
+            box-shadow: 0 12px 0 #7a5e1a;
+        }
+        .btn-call {
+            background: #004c7a;
+            color: white;
+            box-shadow: 0 10px 0 #032b3a;
+            margin-right: 15px;
+        }
+        .btn-call:hover {
+            background: white;
+            color: #004c7a;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #043340;
+            margin-top: 50px;
+            border-top: 5px solid #ffe28c;
+        }
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2.2rem; }
+            .phone-section { font-size: 1.5rem; padding: 15px; }
+            .phone-section i { font-size: 1.8rem; }
+            .btn { display: block; margin: 20px 0; }
+            .btn-call { margin-right: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <div class="page-header">
+        <h1><i class="fas fa-fence"></i> الشبوك</h1>
+        <p>توريد وتركيب وصيانة جميع أنواع الشبوك</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- رقم الهاتف - 0504152836 -->
+        <div class="phone-section">
+            <i class="fas fa-phone-alt"></i>
+            <span dir="ltr">0504152836</span>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+
+        <!-- صور الشبوك - 15 صورة كاملة -->
+        <h2><i class="fas fa-images"></i> معرض صور الشبوك</h2>
+        <div class="gallery-grid">
+            <img src="https://i.ibb.co/4ZcHHh3M/IMG-20251225-WA0029.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/nszyxDXq/IMG-20251225-WA0027.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/fVyB7zgR/IMG-20251225-WA0026.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/JW7YzjtY/IMG-20251225-WA0031.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/5h3YcpRC/IMG-20251225-WA0032.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/dw5zbWsw/IMG-20251225-WA0033.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/nMLyVqC2/IMG-20251225-WA0034.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/HLyrt39Y/Whats-App-Image-2025-08-13-at-4-35-33-PM-4.webp" alt="شبوك">
+            <img src="https://i.ibb.co/BVD3bFPw/Whats-App-Image-2025-08-13-at-4-35-32-PM-3.webp" alt="شبوك">
+            <img src="https://i.ibb.co/C3Mr14v4/Whats-App-Image-2025-08-13-at-4-34-42-PM-2.webp" alt="شبوك">
+            <img src="https://i.ibb.co/S7BzP9jR/IMG-20251225-WA0037.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/kspmQQPx/IMG-20251225-WA0036.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/kgDg3xHs/IMG-20251225-WA0035.jpg" alt="شبوك">
+            <img src="https://i.ibb.co/yctZstRm/Whats-App-Image-2025-08-13-at-4-34-41-PM.webp" alt="شبوك">
+            <img src="https://i.ibb.co/8n1TSnYn/Whats-App-Image-2025-08-13-at-4-34-43-PM.webp" alt="شبوك">
+        </div>
+
+        <!-- خدمات الشبوك -->
+        <h2><i class="fas fa-list-check"></i> خدمات الشبوك</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-fence"></i>
+                <h3>شبوك زراعية</h3>
+                <p>شبوك حماية المزارع والحدائق والمحاصيل من الحيوانات والطيور.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-industry"></i>
+                <h3>شبوك ألمنيوم</h3>
+                <p>شبوك ألمنيوم عالية الجودة، خفيفة الوزن، مقاومة للصدأ.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>شبوك مجلفنة</h3>
+                <p>شبوك مجلفنة ضد الصدأ، قوية ومتينة لسنوات طويلة.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-dove"></i>
+                <h3>شبوك ضد الطيور</h3>
+                <p>حماية المحاصيل والمزارع من الطيور بكفاءة عالية.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-futbol"></i>
+                <h3>شبوك ملاعب</h3>
+                <p>شبوك ملاعب خماسي، تنس، سلة، بأعلى المواصفات.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-home"></i>
+                <h3>شبوك استراحات</h3>
+                <p>شبوك للاستراحات والفلل والقصور والحدائق المنزلية.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>تركيب شبوك</h3>
+                <p>تركيب جميع أنواع الشبوك بفريق فني متخصص.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-truck"></i>
+                <h3>توريد شبوك</h3>
+                <p>توريد جميع أنواع الشبوك بأسعار تنافسية.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-wrench"></i>
+                <h3>صيانة شبوك</h3>
+                <p>صيانة وإصلاح وفك وتركيب الشبوك.</p>
+            </div>
+        </div>
+
+        <!-- أنواع الشبوك -->
+        <div style="margin-top: 50px; background: rgba(255,226,140,0.05); border-radius: 30px; padding: 30px; border: 2px solid #ffe28c;">
+            <h2 style="border-bottom-color: #ffe28c;"><i class="fas fa-tags"></i> أنواع الشبوك</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 25px;">
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">زراعية</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">مزارع</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">حماية</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">ألمنيوم</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">مجلفنة</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">بلاستيك</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">ملاعب</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">استراحات</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">أحواش</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">حدائق</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">بيوت محمية</span>
+                <span style="background: #ffe28c; color: #043340; padding: 12px 25px; border-radius: 50px; font-weight: 700; font-size: 1.1rem;">مشاتل</span>
+            </div>
+        </div>
+
+        <!-- كلمات مفتاحية - سيو -->
+        <div class="keywords-section">
+            <h2 style="border-bottom-color: #ffe28c; margin-bottom: 0;">
+                <i class="fas fa-key"></i> كلمات مفتاحية - الشبوك
+            </h2>
+            <p style="color: #ffe28c; margin-top: 10px; font-size: 1.1rem;">
+                أكثر من 150 كلمة مفتاحية لتصدر نتائج البحث
+            </p>
+            <div class="keywords-grid">
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك زراعية</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مزارع</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك حماية</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ألمنيوم</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مجلفنة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بلاستيك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ضد القوارض</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ضد الطيور</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ضد الغزلان</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك استراحات</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك أحواش</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك حدائق</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك تظليل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك تعشير</span>
+                <span class="keyword"><i class="fas fa-tag"></i> سياج زراعي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> أسوار شبك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> بوابات شبك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> أعمدة شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> توريد شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> صيانة شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> فك وتركيب شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب خماسي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب تنس</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مزارع دواجن</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مشاتل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بيوت محمية</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مظلات</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك برجولات</span>
+                <span class="keyword"><i class="fas fa-tag"></i> مقاول شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> فني شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك مزارع</span>
+                <span class="keyword"><i class="fas fa-tag"></i> سعر شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك للبيع</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بالرياض</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بالقصيم</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بالأحساء</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بجدة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بالدمام</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بمكة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بالمدينة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بتبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> ارخص شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> افضل شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مزارع النخيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مزارع الزيتون</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك حماية الابل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك حماية الغنم</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب خماسي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب تنس</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب كرة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك استراحات للبيع</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك حدائق منزلية</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك فلل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك قصور</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك شركات</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مصانع</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مستودعات</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مكافحة القوارض</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مكافحة الطيور</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مكافحة الغزلان</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مكافحة الثعالب</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مكافحة الكلاب</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مكافحة الافاعي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك زراعية للبيع</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك حماية المحاصيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك حماية الاشجار</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك توريد وتركيب</span>
+                <span class="keyword"><i class="fas fa-tag"></i> مؤسسة شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شركة شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> معرض شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> مصنع شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مزارع دواجن</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مزارع اغنام</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مزارع ابل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مزارع خيول</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مزارع نحل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مشاتل زراعية</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك بيوت بلاستيكية</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك محميات زراعية</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك تظليل للسيارات</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك تظليل للحدائق</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك تظليل للمسابح</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك تظليل للاستراحات</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك برجولات خشبية</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك برجولات حديد</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك مظلات سيارات</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك الرياض</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك جدة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك الدمام</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك الخبر</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك القصيم</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك الاحساء</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك المدينة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك مكة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> تركيب شبوك تبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب خماسي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب تنس ارضي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب كرة طائرة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب كرة سلة</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب بادل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب جولف</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب خماسي نجيل</span>
+                <span class="keyword"><i class="fas fa-tag"></i> شبوك ملاعب نجيل صناعي</span>
+                <span class="keyword"><i class="fas fa-tag"></i> مقاول شبوك معتمد</span>
+                <span class="keyword"><i class="fas fa-tag"></i> فني شبوك محترف</span>
+                <span class="keyword"><i class="fas fa-tag"></i> ارخص اسعار الشبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> عروض شبوك</span>
+                <span class="keyword"><i class="fas fa-tag"></i> خصم شبوك</span>
+            </div>
+        </div>
+
+        <!-- أزرار طلب الخدمة -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://wa.me/966504152836?text=السلام%20عليكم%20،%20أريد%20طلب%20خدمة%20الشبوك" class="btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+            <a href="tel:0504152836" class="btn btn-call">
+                <i class="fas fa-phone-alt"></i> اتصال مباشر
+            </a>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <div class="footer">
+        <p style="font-size: 1.2rem; font-weight: 700;">مؤسسة الظل · جميع الحقوق محفوظة 2026</p>
+        <p style="color: #ffe28c; margin-top: 10px;">رقم الشبوك: 0504152836</p>
+    </div>
+
+</body>
+</html>
