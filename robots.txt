@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://اسمك.github.io/mzalat-al-dhil/sitemap.xml
