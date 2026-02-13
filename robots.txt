@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://اسمك.github.io/mzalat-al-dhil/sitemap.xml
+https://github.com/ahsashades-coder/ahsashades-coder.github.io/blob/main/robots.txt
